@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>フィールドボス送信機</title>
+</head>
+<body>
+    <h1>フィールドボス送信機</h1>
+    <form action="/send" method="post">
+        <div><input type="checkbox" name="boss" value="バレ3種です">バレ3種</div>
+        <div><input type="checkbox" name="boss" value="廃墟2種です">廃墟2種</div>
+        <div><input type="checkbox" name="boss" value="ラウラウです">ラウラウ</div>
+        <input type="submit" value="送信">
+    </form>
+　　<h2>カスタムメッセージの送信</h2>
+    <form action="/send_custom_message" method="post">
+        <textarea name="custom_message" rows="4" cols="50"></textarea>
+        <input type="submit" value="カスタムメッセージを送信">
+    </form>
+
+</body>
+</html>
